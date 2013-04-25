@@ -17,10 +17,6 @@ Also includes other extensions that are typically used:
 * ParticleDesigner classes for Particle system support.
 * AS3 Signals (from org.osflash.signals).
 
-WARNING
--------
-
-This project uses [Inline] metadata which requires the ASC2.0 compiler. If you're still operating with the old mxmlc.exe compiler, some classes may not be compatible or should simply not be used.
 
 Just care about the SWC?
 ------------------------
