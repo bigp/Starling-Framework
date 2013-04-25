@@ -1,4 +1,4 @@
-Starling Framework (BigP Remix)
+Starling Framework (BigP Edits)
 ===============================
 
 This is a revised version of the Starling framework with a few additional features you may like!
