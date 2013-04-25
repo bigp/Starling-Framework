@@ -35,7 +35,7 @@ For example, let's create one called "Preloader":
 
 **NOTE**: The syntax for the *overrideable* AND *customizable properties* are single and double-underscored "__" to make them more obvious *(mostly for alphabetical Auto-Completion reasons...)*
 
-To actually START your application, you must call `startLoading()` manually. The reason for this is to initialize anything you need beforehand, to avoid any race-conditions are weird Flash unexpected behaviors.
+To actually START your application, you must call `startLoading()` manually. The reason for this is to initialize anything you need beforehand, to avoid any race-conditions or weird Flash unexpected behaviors.
 
 By default, the Preloader will attempt to load a class called "Main" (at the top-level default package).
 
