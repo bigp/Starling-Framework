@@ -47,7 +47,7 @@ If you wish to change this to something else, just provide the fully-qualified c
 		startLoading();
 	}
 
-**IMPORTANT**: Additionally, you will need to add some **Additional Compiler Arguments** to make sure your Main classes is embedded in your SWF and your Preloader knows where to find it. To do this simply add the following in your compiler arguments:
+**IMPORTANT**: Additionally, you will need to add some **Additional Compiler Arguments** to make sure your Main class is embedded in your SWF and your Preloader knows where to find it. To do this simply add the following in your compiler arguments:
 
  * For top-level classes, simply add: **-frame=Label,YourMain**
  * For deeper package classes, add: **-frame=Label,full.qualified.path.of.your.class.YourMain**
