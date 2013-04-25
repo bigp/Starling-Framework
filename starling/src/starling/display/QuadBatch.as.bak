@@ -352,14 +352,14 @@ package starling.display
                        mSmoothing != smoothing ||
                        mTinted != (tinted || parentAlpha != 1.0) ||
                        this.blendMode != blendMode;
-				
-				if(hasChanged) Starling.whenStateChanges.dispatch(this, arguments);
+				CONFIG::debug {
+					if(hasChanged) Starling.current.whenStateChanges.dispatch(this, arguments);
+				}
 				return hasChanged;
 			}
             else return true;
         }
         
-
         // display object methods
         
         /** @inheritDoc */

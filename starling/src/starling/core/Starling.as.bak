@@ -190,10 +190,10 @@ package starling.core
         private static var sHandleLostContext:Boolean;
         private static var sContextData:Dictionary = new Dictionary(true);
         
-        public static var whenDrawCallStart:Signal;
-		public static var whenDrawCallCount:Signal;
-		public static var whenDrawCallEnd:Signal;
-		public static var whenStateChanges:Signal;
+        public var whenDrawCallStart:Signal;
+		public var whenDrawCallCount:Signal;
+		public var whenDrawCallEnd:Signal;
+		public var whenStateChanges:Signal;
 		
 		// construction
         
@@ -401,7 +401,7 @@ package starling.core
             updateNativeOverlay();
             mSupport.nextFrame();
             
-			whenDrawCallStart.dispatch();
+			CONFIG::debug { whenDrawCallStart.dispatch(); }
 			
             if (!mShareContext)
                 RenderSupport.clear(mStage.color, 1.0);
@@ -427,8 +427,6 @@ package starling.core
             
             if (!mShareContext)
                 mContext.present();
-			
-			whenDrawCallEnd.dispatch();
         }
         
         private function updateViewPort(forceUpdate:Boolean=false):void
@@ -752,7 +750,7 @@ package starling.core
         
         /** The viewport into which Starling contents will be rendered. */
         public function get viewPort():Rectangle { return mViewPort; }
-        public function set viewPort(value:Rectangle):void { mViewPort = value.clone(); updateViewPort(true); }
+        public function set viewPort(value:Rectangle):void { mViewPort = value.clone(); }
         
         /** The ratio between viewPort width and stage width. Useful for choosing a different
          *  set of textures depending on the display resolution. */

@@ -10,24 +10,24 @@
 
 package starling.textures
 {
-    import flash.display.Bitmap;
-    import flash.display.BitmapData;
-    import flash.display3D.Context3D;
-    import flash.display3D.Context3DTextureFormat;
-    import flash.display3D.textures.TextureBase;
-    import flash.events.Event;
-    import flash.geom.Matrix;
-    import flash.geom.Point;
-    import flash.geom.Rectangle;
-    import flash.system.Capabilities;
-    import flash.utils.ByteArray;
-    import flash.utils.getQualifiedClassName;
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display3D.Context3D;
+	import flash.display3D.Context3DTextureFormat;
+	import flash.display3D.textures.TextureBase;
+	import flash.events.Event;
+	import flash.geom.Matrix;
+	import flash.geom.Point;
+	import flash.geom.Rectangle;
+	import flash.system.Capabilities;
+	import flash.utils.ByteArray;
+	import flash.utils.getQualifiedClassName;
+	import starling.core.Starling;
+	import starling.errors.AbstractClassError;
+	import starling.errors.MissingContextError;
+	import starling.utils.getNextPowerOfTwo;
+	import starling.utils.VertexData;
     
-    import starling.core.Starling;
-    import starling.errors.AbstractClassError;
-    import starling.errors.MissingContextError;
-    import starling.utils.VertexData;
-    import starling.utils.getNextPowerOfTwo;
 
     /** <p>A texture stores the information that represents an image. It cannot be added to the
      *  display list directly; instead it has to be mapped onto a display object. In Starling, 

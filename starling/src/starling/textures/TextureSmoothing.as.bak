@@ -27,9 +27,7 @@ package starling.textures
         /** Trilinear filtering. Highest quality by taking the next mip map level into account. */
         public static const TRILINEAR:String = "trilinear";
         
-        public static var DEFAULT:String =		BILINEAR;
-        
-		/** Determines whether a smoothing value is valid. */
+        /** Determines whether a smoothing value is valid. */
         public static function isValid(smoothing:String):Boolean
         {
             return smoothing == NONE || smoothing == BILINEAR || smoothing == TRILINEAR;

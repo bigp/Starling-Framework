@@ -115,7 +115,7 @@ package starling.display
         
         /** Adds a frame at a certain index, optionally with a sound and a custom duration. */
         public function addFrameAt(frameID:int, texture:Texture, sound:Sound=null, 
-                                   duration:Number=-1, callback:Function=null):void
+                                   duration:Number=-1):void
         {
             if (frameID < 0 || frameID > numFrames) throw new ArgumentError("Invalid frame id");
             if (duration < 0) duration = mDefaultFrameDuration;
@@ -200,6 +200,8 @@ package starling.display
         public function setFrameDuration(frameID:int, duration:Number):void
         {
             if (frameID < 0 || frameID >= numFrames) throw new ArgumentError("Invalid frame id");
+            mTotalTime -= getFrameDuration(frameID);
+            mTotalTime += duration;
             mDurations[frameID] = duration;
             updateStartTimes();
         }

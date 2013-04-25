@@ -69,11 +69,7 @@ package starling.utils
             this.numVertices = numVertices;
         }
 
-        public function destroy():void {
-			mRawData = null;
-		}
-		
-		/** Creates a duplicate of either the complete vertex data object, or of a subset. 
+        /** Creates a duplicate of either the complete vertex data object, or of a subset. 
          *  To clone all vertices, set 'numVertices' to '-1'. */
         public function clone(vertexID:int=0, numVertices:int=-1):VertexData
         {

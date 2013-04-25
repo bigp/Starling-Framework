@@ -240,7 +240,6 @@ package starling.core
             mBackBufferWidth  = width;
             mBackBufferHeight = height;
             
-			//Adapt 'configureBackBuffer' to FlashPlayer 11 changes in implementation
             var configureBackBuffer:Function = Starling.context.configureBackBuffer;
             var methodArgs:Array = [width, height, antiAlias, enableDepthAndStencil];
             if (configureBackBuffer.length > 4) methodArgs.push(wantsBestResolution);
