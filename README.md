@@ -5,7 +5,7 @@ This is a revised version of the Starling framework with a few additional featur
 
 * [MovieClip](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/MovieClip.as) callback method on frames.
 * [Sprite9Slice](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/extensions/bigp/Sprite9Sliced.as) for all your 9-slicing needs!
-* [Image](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/Image.as) default smoothing can be assigned on [TextureSmoothing.DEFAULT](](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/textures/TextureSmoothing.as) static property.
+* [Image](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/Image.as) default smoothing can be assigned on [TextureSmoothing.DEFAULT](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/textures/TextureSmoothing.as) static property.
 * [BitmapImage](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/extensions/bigp/BitmapImage.as) for dynamically updating a BitmapData to the GPU (requires call to invalidate()).
 * [ScrollImage](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/extensions/bigp/ScrollImage.as) for UV scrolling, scaling and clipping support.
 * [PreloaderStarling](https://github.com/bigp/Starling-Framework/blob/master/starling/src/com/bigp/preloaders/PreloaderStarling.as) class to setup your App/Game with a built-in Preloader (2 frames flash.display.MovieClip, basically).
