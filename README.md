@@ -11,6 +11,7 @@ This is a revised version of the Starling framework with a few additional featur
 * [PreloaderStarling](https://github.com/bigp/Starling-Framework/blob/master/starling/src/com/bigp/preloaders/PreloaderStarling.as) class to setup your App/Game with a built-in Preloader (2 frames flash.display.MovieClip, basically).
 * [BlendMode](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/BlendMode.as) lookup table (useful for Tweening between Blendmodes, sorta).
 * [DisplayObject](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/DisplayObject.as) has childIndex, getChildPrev(), getChildNext().
+* [Starling](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/core/Starling.as) class now has static Signals to dispatch callbacks during rendering phases (good for detecting draw-counts, Pre/Post rendering)
 
 Also includes other extensions that are typically used:
 
