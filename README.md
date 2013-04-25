@@ -23,7 +23,7 @@ Just care about the SWC?
 
 Grab it here: 
 
-* [Starling_BigP_SWC.swc (may need to download whole ZIP file...)](https://github.com/bigp/Starling-Framework/tree/master/starling/bin)
+* [Starling_BigP_SWC.swc](https://github.com/bigp/Starling-Framework/raw/master/starling/bin/Starling_BigP_SWC.swc)
 
 Where do I find more information about Starling?
 ------------------------------------------------
