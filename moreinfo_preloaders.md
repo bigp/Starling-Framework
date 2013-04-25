@@ -23,10 +23,6 @@ For example, let's create one called "Preloader":
 				
 				startLoading();
 			}
-			
-			protected override function _instantiate():void {
-				super._instantiate();
-			}
 		}
 	}
 
