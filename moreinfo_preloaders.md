@@ -6,7 +6,7 @@ To use this class, you should first subclass it with your very own Preloader cla
 For example, let's create one called "Preloader":
 
 
-  package  {
+	package  {
 		import com.bigp.preloaders.PreloaderStarling;
 	
 		/**
