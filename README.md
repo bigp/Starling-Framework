@@ -21,9 +21,7 @@ Also includes other extensions that are typically used:
 Just care about the SWC?
 ------------------------
 
-Grab it here: 
-
-* [Starling_BigP_SWC.swc](https://github.com/bigp/Starling-Framework/raw/master/starling/bin/Starling_BigP_SWC.swc)
+Grab it here: [Starling_BigP_SWC.swc](https://github.com/bigp/Starling-Framework/raw/master/starling/bin/Starling_BigP_SWC.swc)
 
 Where do I find more information about Starling?
 ------------------------------------------------
