@@ -1,5 +1,26 @@
-Starling Framework: the GPU powered 2D Flash API (BigP Remix)
-=============================================================
+Starling Framework (BigP Remix)
+===============================
+
+This is a revised version of the Starling framework with a few additional features you may like!
+
+* MovieClip callback method on frames.
+* Sprite9Slice for all your 9-slicing needs!
+* Image default smoothing can be assigned on TextureSmoothing.DEFAULT static property.
+* BitmapImage for dynamically updating a BitmapData to the GPU (requires call to invalidate()).
+* ScrollImage for UV scrolling, scaling and clipping support.
+* PreloaderStarling class to setup your App/Game with a built-in Preloader (2 frames flash.display.MovieClip, basically).
+* BlendMode lookup table (useful for Tweening between Blendmodes, sorta).
+* DisplayObject has childIndex, getChildPrev(), getChildNext().
+
+Also includes other extensions that are typically used:
+
+* ParticleDesigner classes for Particle system support.
+* AS3 Signals (from org.osflash.signals).
+
+WARNING
+-------
+
+This project uses [Inline] metadata which requires the ASC2.0 compiler. If you're still operating with the old mxmlc.exe compiler, some classes may not be compatible or should simply not be used.
 
 Just care about the SWC?
 ------------------------
