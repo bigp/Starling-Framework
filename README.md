@@ -1,14 +1,12 @@
-Starling Framework: the GPU powered 2D Flash API
-================================================
+Starling Framework: the GPU powered 2D Flash API (BigP Remix)
+=============================================================
 
-What is Starling?
------------------
+Just care about the SWC?
+------------------------
 
-Starling is an ActionScript 3 library that mimics the conventional Flash display tree architecture. In contrast to conventional display objects, however, Starling "lives" entirely inside the Stage3D environment. That means that all objects are rendered directly by the GPU, which leads to a significant performance boost. 
+Grab it here: 
 
-Starling's API is not a direct 1:1 port of the Flash API. The classes were streamlined and optimized for working well with the GPU; common tasks in game development were simplified. Starling hides the Stage3D internals from developers, but makes it easy to access them for those who need to create custom display objects.
-
-Just like its iOS sibling, the [Sparrow Framework][1], Starling aims to be as lightweight and easy to use as possible. As an Open Source project, much care was taken to make the source code easy to read, understand and extend.
+* [Starling_BigP_SWC.swc (may need to download whole ZIP file...)](https://github.com/bigp/Starling-Framework/tree/master/starling/bin)
 
 Where do I find more information about Starling?
 ------------------------------------------------
