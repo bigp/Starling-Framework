@@ -30,7 +30,7 @@ For example, let's create one called "Preloader":
 		}
 	}
 
- * **__autoResizes**: Handles **Event.RESIZE** internally. (*Not tested with fullscreen support though...*)
+ * **__autoResizes**: Handles **Event.RESIZE** internally. *(Not tested with fullscreen support though...)*
  * **__autoAdaptResolution**: When resized, it ensures that the stage doesn't stretch. It extends the stage if you maximize the window (in an AIR app, for example).
 
 **NOTE**: The syntax for the *overrideable* AND *customizable properties* are single and double-underscored "__" to make them more obvious (*mostly for alphabetical Auto-Completion reasons...*)
