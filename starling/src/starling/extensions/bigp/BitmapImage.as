@@ -16,9 +16,16 @@ package starling.extensions.bigp {
 		
 		public var bitmap:BitmapData;
 		
-		public function BitmapImage( pWidth:int, pHeight:int, pTransparent:Boolean = true, pColor:uint = 0x00000000, pAlternateBitmapClass:Class = null ) {
-			var bmpClass:Class =	pAlternateBitmapClass || BitmapData;
-			bitmap = new bmpClass( pWidth, pHeight, pTransparent, pColor);
+		public function BitmapImage( pWidth:int, pHeight:int, pTransparent:Boolean = true, pColor:uint = 0x00000000, pBitmapClassOrInst:* = null ) {
+			if(pBitmapClassOrInst is Class) {
+				var bmpClass:Class =	pBitmapClassOrInst || BitmapData;
+				bitmap = new bmpClass( pWidth, pHeight, pTransparent, pColor);
+			} else if (pBitmapClassOrInst is BitmapData) {
+				bitmap = pBitmapClassOrInst;
+			} else {
+				bitmap = new BitmapData(pWidth, pHeight, pTransparent, pColor);
+			}
+			
 			bitmap.lock();
 			
 			super(starling.textures.Texture.fromBitmapData( bitmap, false ));
