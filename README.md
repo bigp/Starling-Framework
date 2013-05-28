@@ -1,14 +1,34 @@
-Starling Framework: the GPU powered 2D Flash API
-================================================
+Starling Framework (BigP Edits)
+===============================
 
-What is Starling?
------------------
+This is a revised version of the Starling framework with a few additional features you may like!
 
-Starling is an ActionScript 3 library that mimics the conventional Flash display tree architecture. In contrast to conventional display objects, however, Starling "lives" entirely inside the Stage3D environment. That means that all objects are rendered directly by the GPU, which leads to a significant performance boost. 
+* [MovieClip](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/MovieClip.as) callback method on frames.
+* [Sprite9Slice](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/extensions/bigp/Sprite9Sliced.as) for all your 9-slicing needs!
+* [Image](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/Image.as) default smoothing can be assigned on [TextureSmoothing.DEFAULT](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/textures/TextureSmoothing.as) static property.
+* [BitmapImage](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/extensions/bigp/BitmapImage.as) for dynamically updating a BitmapData to the GPU (requires call to invalidate()).
+* [ScrollImage](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/extensions/bigp/ScrollImage.as) for UV scrolling, scaling and clipping support.
+* [PreloaderStarling](https://github.com/bigp/Starling-Framework/blob/master/starling/src/com/bigp/preloaders/PreloaderStarling.as) class to setup your App/Game with a built-in Preloader (2 frames flash.display.MovieClip, basically).
+ * [moreinfo](https://github.com/bigp/Starling-Framework/blob/master/moreinfo_preloaders.md)
+* [BlendMode](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/BlendMode.as) lookup table (useful for Tweening between Blendmodes, sorta).
+* [DisplayObject](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/display/DisplayObject.as) has childIndex, getChildPrev(), getChildNext().
+* [Starling](https://github.com/bigp/Starling-Framework/blob/master/starling/src/starling/core/Starling.as) class now has static Signals to dispatch callbacks during rendering phases (good for detecting draw-counts, Pre/Post rendering)
 
-Starling's API is not a direct 1:1 port of the Flash API. The classes were streamlined and optimized for working well with the GPU; common tasks in game development were simplified. Starling hides the Stage3D internals from developers, but makes it easy to access them for those who need to create custom display objects.
+ * Starling.whenDrawCallStart;
+ * Starling.whenDrawCallCount;
+ * Starling.whenDrawCallEnd;
+ * Starling.whenStateChanges;
 
-Just like its iOS sibling, the [Sparrow Framework][1], Starling aims to be as lightweight and easy to use as possible. As an Open Source project, much care was taken to make the source code easy to read, understand and extend.
+Also includes other extensions that are typically used:
+
+* ParticleDesigner classes for Particle system support.
+* AS3 Signals (from org.osflash.signals).
+
+
+Just care about the SWC?
+------------------------
+
+Grab it here: [Starling_BigP_SWC.swc](https://github.com/bigp/Starling-Framework/raw/master/starling/bin/Starling_BigP_SWC.swc)
 
 Where do I find more information about Starling?
 ------------------------------------------------
